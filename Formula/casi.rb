@@ -4,19 +4,19 @@ class Casi < Formula
   license "AGPL-3.0-only"
 
   on_macos do
-    url "https://github.com/francodipietro/casi/releases/download/v0.1.1/casi_0.1.1_darwin_universal.tar.gz"
-    sha256 "23bf07765dcd88750a5d6ffee8ca445e7043ba8e9db971f6e8c27730b9f4c76e"
+    url "https://github.com/francodipietro/casi/releases/download/v0.1.2/casi_0.1.2_darwin_universal.tar.gz"
+    sha256 "62c0600908e4e1f6629a6fa8f16bd9db3c02f83e389589008622737574029fad"
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/francodipietro/casi/releases/download/v0.1.1/casi_0.1.1_linux_aarch64.tar.gz"
-      sha256 "4ee1e7f396f780df4c9e818da7c44004dc1e11f18e43571d2d7485c1b0e1053a"
+      url "https://github.com/francodipietro/casi/releases/download/v0.1.2/casi_0.1.2_linux_aarch64.tar.gz"
+      sha256 "1985127ea9d64cec9ab62d4ff9bcf5d51540112b1595816bb5a7661a665d3094"
     end
 
     on_intel do
-      url "https://github.com/francodipietro/casi/releases/download/v0.1.1/casi_0.1.1_linux_x86_64.tar.gz"
-      sha256 "807031e83f429d390879a71cd535d589df4775b0e46f5ceb099ce6561e2437ec"
+      url "https://github.com/francodipietro/casi/releases/download/v0.1.2/casi_0.1.2_linux_x86_64.tar.gz"
+      sha256 "c2985adf539adcbfc574c332447a2417e1bfcbb3a3aeaa4b4a319bd2039d4af4"
     end
   end
 
@@ -25,6 +25,6 @@ class Casi < Formula
   end
 
   test do
-    assert_match "casi 0.1.1", shell_output("#{bin}/casi --version")
+    assert_match "casi 0.1.2", shell_output("#{bin}/casi --version")
   end
 end
